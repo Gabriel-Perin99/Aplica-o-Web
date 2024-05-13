@@ -9,7 +9,7 @@
 </p>
  <h2>## Sobre o Projeto 📋</h2>
 
-<p>O projeto consiste em criar um medidor de IMC , que será implementado como uma aplicação web, onde os usuários poderão inser seu dados e obter respostas sobre o indice equivalente ao seu reultado.</p>
+<p>O projeto consiste em criar um medidor de IMC , que será implementado como uma aplicação web, onde os usuários poderão inserir seu dados e obter respostas sobre o indice equivalente ao seu reultado.</p>
 
     
     
