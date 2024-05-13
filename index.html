@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <script src="calc.js"></script>
+    <script src="/js/scripts.js"></script>
+    <link rel="stylesheet" href="Styles/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora IMC</title>
@@ -20,8 +21,20 @@
         </p>
     </div>
     <div class="button">
-        <button type="button" onclick="calImc()">Calcular IMC</button>
+        <button type="button" onclick="calImc()">Calcular IMC</button><br><br>
     </div>
     <div id="resultado"></div>
+    <p>
+        Gostaria de Receber dicas de nutrição, saúde e bem estar?<br>
+        Basta clicar no botão preencher o Formulário.
+    </p>
+    <button type="button" id="btnForm">Preencher Formulário</button><br><br>
+
+    <form id ="form">
+        <label for="nome">Nome Completo : <input type="text" id="nome_f"></label><br><br>
+        <label for="e-mail">E-mail : <input type="email" name="e-mail" id="email_f"></label><br><br>
+        <label for="num">Numero para contato : <input type="number" id="nun_f"></label><br><br>
+        <input type="submit" value="Enviar">
+    </form>
 </body>
 </html>
