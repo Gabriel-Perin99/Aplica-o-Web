@@ -8,21 +8,38 @@
     <title>Calculadora IMC</title>
 </head>
 <body>
-    <div class="Introdução">
-        <h1>Cálculo do Indice de Massa Corporal (IMC)</h1>
-        <p>Insira seus dados para poder  calcular o seu IMC: </p>
+    <h1 id="titulo">Cálculo do Indice de Massa Corporal (IMC)</h1>
+    <div class="introducao">
+        <H2><li>O que é IMC?</li></H2>
+        <p>O <strong>IMC</strong> é uma das principais maneiras de medir o "peso ideal" de uma pessoa.Este sistema foi adotado pela Organização Mundial de Saúde (OMS), 
+        cuja o calculo é feito a partir do peso e altura do individuo.</p>
+        <h2><li>Metade dos brasileiros está acima do peso!</li></h2>
+        <p>De acordo com o Ministério da Saúde (MS), atualmente 60% dos brasileiros acima de 18 anos apresentam sobrepeso, e um em cada quatro é considerado obeso. </p>
+        <h2><li>Classificações:</li></h2>
+        <ul>
+            <li><strong>Menor que 18.5 =</strong> Abaixo do peso.</li>
+            <li><strong>Entre 18.5 e 24.9 =</strong> Peso ideal.</li>
+            <li><strong>Entre 25 e 29.9 =</strong> Sobrepeso.</li>
+            <li><strong>Entre 30 e 34.9 =</strong> Obesidade Grau I.</li>
+            <li><strong>Entre 35 e 39.9 =</strong> Obesidade Grau II.</li>
+            <li><strong>Maior que 40 =</strong> Obesidade mórbida.</li>
+        </ul>
     </div>
     <div class="input">
-        <p>Peso(kg):
-            <input type="text" id="peso">
-        </p>
-        <p>Altura(m):
-            <input type="text" id="altura">
-        </p>
+        <h3>Vamos descobrir qual é o seu indice de massa corporal!</h3>
+        <p>Insira seus dados para poder  calcular o seu IMC: </p>
+        <table>
+            <th>Peso(kg):
+                <input type="text" id="peso">
+            </th>
+            <th>Altura(m):
+                <input type="text" id="altura">
+            </th> 
+        </table>
+        <button type="button" class="btn" onclick="calImc()">Calcular IMC</button><br><br>
     </div>
-    <div class="button">
-        <button type="button" onclick="calImc()">Calcular IMC</button><br><br>
-    </div>
+    
+    
     <div id="resultado"></div>
     <p>
         Gostaria de Receber dicas de nutrição, saúde e bem estar?<br>
