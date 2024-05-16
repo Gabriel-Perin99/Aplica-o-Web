@@ -66,20 +66,22 @@ function calImc(){
     }
 }
 //Evento para Mostrar/Ocultar o Formulário
-document.addEventListener('DOMContentLoaded', function(){
+function hForm(){
     const btnForm = document.getElementById('btnForm');
     const form = document.getElementById('form');
 
-    btnForm.addEventListener('click', function(){
-        if (form.style.display === 'none'){
-            form.style.display = 'block';
-            btnForm.textContent = "Ocultar Formulário"
-        } else {
-            form.style.display = 'none';
-            btnForm.textContent = "Mostrar Formulário"
-        }
-    })
+    if (form.hasAttribute("hidden")){
+        form.removeAttribute("hidden");
+        btnForm.textContent = "Ocultar Formulário"
+    }else{
+        form.setAttribute("hidden", true);
+        btnForm.textContent = "Mostrar Formulário"
+    }
+}
+    
+    
 
-})
+    
+
 
 

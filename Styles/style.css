@@ -1,14 +1,11 @@
-#form {
-    display: none;
-}
+
 
 body {
-    background-image: url(../img/background.jpg);
+    background-color: skyblue;
     background-repeat: no-repeat;
     background-position: center;
     background-size: auto;
     background-attachment:fixed;
-    background-color: #bdffd8;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,10 +18,11 @@ body {
 }
 
 #titulo {
-    color: black;
+    font-size: 50px;
+    color: whitesmoke;
     box-shadow: 5%;
     margin-top: 10px;
-    border: 3px black;
+    border: 10px whitesmoke double;
     border-radius: 5px;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -89,11 +87,9 @@ th{
 }
 
 #resultado{
-    margin-top: 30px;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     font-size: 30px;
     max-width: 450px;
     border-radius: 5px;
+    text-align: center;
 
 }
