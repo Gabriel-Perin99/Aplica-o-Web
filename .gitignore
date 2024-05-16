@@ -138,3 +138,9 @@ lerna-debug.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Existing patterns
+...
+
+# Ensure partials/ is not ignored
+!partials/
