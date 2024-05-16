@@ -44,7 +44,7 @@ function calImc(){
     }
     
     //variavel que linka o documento
-    const url = '../partials/infos.html';
+    const url = '../html/infos.html';
     //função para pegar o html
     fetch (url)
     .then(response => response.text())
