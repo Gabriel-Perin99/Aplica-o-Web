@@ -31,13 +31,13 @@ function calImc(){
     
     if (imc <=  18.5){
         resultadoID = "abaixoPeso";  
-    } else if (imc > 18.5 && imc <= 24.9) {
+    } else if (imc >= 18.5 && imc < 25) {
         resultadoID = "normal";          
-    } else if (imc > 25 && imc <= 29.9) {
+    } else if (imc >= 25 && imc < 30) {
         resultadoID = "sPeso";                  
-    } else if (imc > 30 && imc <= 34.9) {
+    } else if (imc >= 30 && imc < 35) {
         resultadoID = "grauI";                             
-    } else if (imc > 35 && imc <= 39.9) {
+    } else if (imc >= 35 && imc <= 39.9) {
         resultadoID = "grauII";                            
     } else {
         resultadoID = "morb";
@@ -75,7 +75,7 @@ function hForm(){
         btnForm.textContent = "Ocultar Formulário"
     }else{
         form.setAttribute("hidden", true);
-        btnForm.textContent = "Mostrar Formulário"
+        btnForm.textContent = "Preencher Formulário"
     }
 }
     

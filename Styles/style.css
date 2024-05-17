@@ -93,3 +93,11 @@ th{
     text-align: center;
 
 }
+
+#intText{
+    font-size: 30px;
+    color: whitesmoke;
+    text-align: center;
+    border: 10px whitesmoke double;
+    padding: 15px;
+}
