@@ -96,7 +96,7 @@ function envForm(){
                     document.getElementById("msgSuc").style.display = "block";
                     document.getElementById("form").style.display = "none";
                     document.getElementById("btnForm").style.display= "none";
-                    document.getElementById("intTesxt").style.display="none";
+                    document.getElementById("intText").style.display="none";
                 }
             };
             xhr.send("nome=" + encodeURIComponent(nome) + "&email=" + encodeURIComponent(email) + "&num=" + encodeURIComponent(num));
