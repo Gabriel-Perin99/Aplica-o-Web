@@ -78,8 +78,31 @@ function hForm(){
         btnForm.textContent = "Preencher Formulário"
     }
 }
-    
-    
+
+function envForm(){
+    var nome = document.getElementById("nome_f").value;
+    var email = document.getElementById("email_f").value;
+    var num = document.getElementById("nun_f").value;
+
+    if (nome == ''||email =='' || num == ''){
+        alert('Preencha todos os campos!');
+        }else{
+
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "./partials/conexao.php", true);
+            xhr.setRequestHeader("content-type", "application/x-www-form-urlencoded");
+            xhr.onreadystatechange = function(){
+                if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200){
+                    document.getElementById("msgSuc").style.display = "block";
+                    document.getElementById("form").style.display = "none";
+                    document.getElementById("btnForm").style.display= "none";
+                    document.getElementById("intTesxt").style.display="none";
+                }
+            };
+            xhr.send("nome=" + encodeURIComponent(nome) + "&email=" + encodeURIComponent(email) + "&num=" + encodeURIComponent(num));
+    }
+}
+        
 
     
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <script src="./js/scripts.js"></script>
     <link rel="stylesheet" href="Styles/style.css">
@@ -7,15 +8,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora IMC</title>
 </head>
+
 <body>
     <h1 id="titulo">Cálculo do Indice de Massa Corporal (IMC)</h1>
     <div class="introducao">
-        <H2><li>O que é IMC?</li></H2>
-        <p>O <strong>IMC</strong> é uma das principais maneiras de medir o "peso ideal" de uma pessoa.Este sistema foi adotado pela Organização Mundial de Saúde (OMS), 
-        cuja o calculo é feito a partir do peso e altura do individuo.</p>
-        <h2><li>Metade dos brasileiros está acima do peso!</li></h2>
-        <p>De acordo com o Ministério da Saúde (MS), atualmente 60% dos brasileiros acima de 18 anos apresentam sobrepeso, e um em cada quatro é considerado obeso. </p>
-        <h2><li>Classificações:</li></h2>
+        <H2>
+            <li>O que é IMC?</li>
+        </H2>
+        <p>O <strong>IMC</strong> é uma das principais maneiras de medir o "peso ideal" de uma pessoa.Este sistema foi
+            adotado pela Organização Mundial de Saúde (OMS),
+            cuja o calculo é feito a partir do peso e altura do individuo.</p>
+        <h2>
+            <li>Metade dos brasileiros está acima do peso!</li>
+        </h2>
+        <p>De acordo com o Ministério da Saúde (MS), atualmente 60% dos brasileiros acima de 18 anos apresentam
+            sobrepeso, e um em cada quatro é considerado obeso. </p>
+        <h2>
+            <li>Classificações:</li>
+        </h2>
         <ul>
             <li><strong>Menor que 18.5 =</strong> Abaixo do peso.</li>
             <li><strong>Entre 18.5 e 24.9 =</strong> Peso ideal.</li>
@@ -25,33 +35,38 @@
             <li><strong>Maior que 40 =</strong> Obesidade mórbida.</li>
         </ul>
     </div>
-    <div class="input">
-        <h3>Vamos descobrir qual é o seu indice de massa corporal!</h3>
-        <p>Insira seus dados para poder  calcular o seu IMC: </p>
-        <table>
-            <th>Peso(kg):
-                <input type="number" id="peso">
-            </th>
-            <th>Altura(m):
-                <input type="number" id="altura">
-            </th> 
-        </table>
-        <div class ='resultado'>
-            <button type="button" class="btn" id="btn" onclick="calImc()">Calcular IMC</button><br><br>
-            <p id="resultado"></p>
+    <div id="test">
+        <div class="input">
+            <h3>Vamos descobrir qual é o seu indice de massa corporal!</h3>
+            <p>Insira seus dados para poder calcular o seu IMC: </p>
+            <table>
+                <th>Peso(kg):
+                    <input type="number" id="peso">
+                </th>
+                <th>Altura(m):
+                    <input type="number" id="altura">
+                </th>
+            </table>
+            <div class='resultado'>
+                <button type="button" class="btn" id="btn" onclick="calImc()">Calcular IMC</button><br><br>
+                <p id="resultado"></p>
             </div>
+        </div>
     </div>
     <p id="intText">
         Gostaria de Receber dicas de nutrição, saúde e bem estar?<br>
-        Basta clicar no botão preencher o Formulário.
+        Basta clicar no botão e preencher o Formulário.
+        <button type="button" id="btnForm" onclick="hForm()">Preencher Formulário</button><br><br>
     </p>
-    <button type="button" id="btnForm" onclick="hForm()">Preencher Formulário</button><br><br>
-
-    <form id ="form" hidden>
-        <label for="nome">Nome Completo : <input type="text" id="nome_f"></label><br><br>
-        <label for="e-mail">E-mail : <input type="email" name="e-mail" id="email_f"></label><br><br>
-        <label for="num">Numero para contato : <input type="number" id="nun_f"></label><br><br>
-        <input type="submit" value="Enviar">
+    <form action="./partials/conexao.php" id="form" method="post" hidden>
+        <label for="nome">Nome Completo : <input type="text" name="nome" id="nome_f"></label><br><br>
+        <label for="e-mail">E-mail : <input type="email" name="email" id="email_f"></label><br><br>
+        <label for="num">Numero para contato : <input type="number" name="num" id="nun_f"></label><br><br>
+        <input type="button" value="Enviar" onclick="envForm()">
     </form>
+
+
+    <div id="msgSuc" style="display: none;">Formulário enviado com sucesso!!</div>
 </body>
+
 </html>
