@@ -121,3 +121,36 @@ th{
     text-align: justify;
     font-size: 20px;
 }
+
+#form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 5%;
+    text-align: justify;
+    align-items: center;
+}
+
+legend{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#btnForm{
+    margin-top: 30px;
+    width: 400px;
+    height: 50px;
+    background-color: #8AEBD4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    font-size: 35px;
+}
+#btnForm:hover{
+    background-color: #D4F086;
+
+}
+#btnForm:active{
+    background-color:#84F08D ;
+}

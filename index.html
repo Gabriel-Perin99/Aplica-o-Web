@@ -59,14 +59,17 @@
         <button type="button" id="btnForm" onclick="hForm()">Preencher Formulário</button><br><br>
     </p>
     <form action="./partials/conexao.php" id="form" method="post" hidden>
-        <label for="nome">Nome Completo : <input type="text" name="nome" id="nome_f"></label><br><br>
-        <label for="e-mail">E-mail : <input type="email" name="email" id="email_f"></label><br><br>
-        <label for="num">Numero para contato : <input type="number" name="num" id="nun_f"></label><br><br>
-        <input type="button" value="Enviar" onclick="envForm()">
+        <Legend><b>Formulário para contato</b></Legend>
+        <label for="nome">Nome Completo : <input type="text" placeholder="Ex: Eduardo Andrade" name="nome"
+                id="nome_f"></label><br><br>
+        <label for="e-mail">E-mail : <input type="email" placeholder="Ex: seuemail@gmail.com" name="email"
+                id="email_f"></label><br><br>
+        <label for="num">Numero para contato : <input type="text" placeholder="(99)99999-9999" name="num"
+                id="nun_f"></label><br><br>
+        <input id="btnForm" type="button" value="Enviar" onclick="envForm()">
     </form>
-
-
     <div id="msgSuc" style="display: none;">Formulário enviado com sucesso!!</div>
+
 </body>
 
 </html>
